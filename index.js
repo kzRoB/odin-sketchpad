@@ -1,4 +1,4 @@
-const gridSize = 16
+const gridSize = 32
 
 //testing
 //document.body.style.color = "rgb(255,255,255)"
@@ -15,8 +15,8 @@ document.body.onmouseup = function() {
 
 //Create the drawing board
 const grid = document.createElement("div")
-grid.style.width = "640px"
-grid.style.height = "640px"
+grid.style.width = "800px"
+grid.style.height = "800px"
 grid.style.gap = "4px"
 grid.style.display = "grid"
 grid.style.gridTemplateColumns = "repeat("+gridSize+","+100/gridSize+"%)"
