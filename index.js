@@ -18,8 +18,8 @@ function createGrid(gridSize) {
     grid = document.createElement("div")
     grid.style.border = "solid"
     grid.style.borderWidth = "1px"
-    grid.style.width = "480px"
-    grid.style.height = "480px"
+    grid.style.width = "512px"
+    grid.style.height = "512px"
     grid.style.marginLeft = "auto"
     grid.style.marginRight = "auto"
     grid.style.display = "flex"
@@ -73,9 +73,9 @@ buttons.style.padding = "16px"
 const gridSizeBtn = document.createElement("button")
 gridSizeBtn.textContent = "Set Grid Size"
 gridSizeBtn.addEventListener("click", () => {
-    let newGridSize = prompt("Set the new grid size to: (number range: 2-100)", "16")
+    let newGridSize = prompt("Set the new grid size to: (number range: 1-100)", "16")
     if (newGridSize == null) {return}
-    if (newGridSize < 2) {newGridSize = 2}
+    if (newGridSize < 1) {newGridSize = 1}
     if (newGridSize > 100) {newGridSize = 100}
     createGrid(newGridSize)
 })
